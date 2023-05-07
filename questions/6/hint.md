@@ -1,0 +1,1 @@
+There are two variables named `a`. What is the type of each one?

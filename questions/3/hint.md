@@ -1,0 +1,1 @@
+In what ways is a `const` different from a non-mut `static`?
