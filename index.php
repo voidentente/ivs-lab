@@ -99,7 +99,7 @@
                     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
                     <script>hljs.highlightAll();</script>
                     <link rel="stylesheet" href="common.css">
-                    <script defer>
+                    <script>
                         document.addEventListener("DOMContentLoaded", () => {
 
                             document.getElementById("show-hint").addEventListener("click", () => {
@@ -126,14 +126,11 @@
 
                         });
                     </script>
-                    <!--
-                        --- Copyright Notice ---
-                        Quiz written by David Tolnay.
-                        Found here: https://dtolnay.github.io/rust-quiz
-                        And here: https://github.com/dtolnay/rust-quiz
-                        Licensed under CC-BY-SA.
-                        ------------------------
-                    --->
+                    <!-- Copyright Notice -->
+                    <!-- Quiz written by David Tolnay. -->
+                    <!-- Found here: https://dtolnay.github.io/rust-quiz -->
+                    <!-- And here: https://github.com/dtolnay/rust-quiz -->
+                    <!-- Licensed under CC-BY-SA. -->
                 </head>
                 <body>
                     <h1 style="padding-top: 4em; text-align: center;">What is the output of this Rust program?</h1>
@@ -196,6 +193,8 @@
             $quiz = load_quiz($key);
 
             $question = $quiz[$KEY_QUESTION];
+            $question = htmlspecialchars($question);
+
             $explanation = $quiz[$KEY_EXPLANATION];
             $solution = $quiz[$KEY_SOLUTION];
 
@@ -240,14 +239,11 @@
                     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
                     <script>hljs.highlightAll();</script>
                     <link rel="stylesheet" href="common.css">
-                    <!--
-                        --- Copyright Notice ---
-                        Quiz written by David Tolnay.
-                        Found here: https://dtolnay.github.io/rust-quiz
-                        And here: https://github.com/dtolnay/rust-quiz
-                        Licensed under CC-BY-SA.
-                        ------------------------
-                    --->
+                    <!-- Copyright Notice -->
+                    <!-- Quiz written by David Tolnay. -->
+                    <!-- Found here: https://dtolnay.github.io/rust-quiz -->
+                    <!-- And here: https://github.com/dtolnay/rust-quiz -->
+                    <!-- Licensed under CC-BY-SA. -->
                 </head>
                 <body>
                     <div style="padding-top: 4em; text-align: center;">
